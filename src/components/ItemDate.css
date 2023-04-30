@@ -1,0 +1,14 @@
+.mfg-date {
+    text-align:center;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    justify-content: center;
+    font-weight: bold;
+}
