@@ -1,5 +1,6 @@
 import './App.css';
 import Products from './components/Products';
+import NewProduct from './components/NewProduct';
 
 function App() {
   const response = [
@@ -30,8 +31,15 @@ function App() {
   ];
 
   return (
-    <div className='App'>
-        <Products items={response}/>
+    <div className='app'>
+        <div className='new_product'>
+          <NewProduct />  
+        </div>
+        
+        <div className='products'>
+          <Products items={response}/>
+        </div>
+        
     </div>
   );
 }

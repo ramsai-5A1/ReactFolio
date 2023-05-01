@@ -1,4 +1,4 @@
-.App {
+.products {
   background-color: yellow;
   height: 630px;
   width: 470px;
@@ -9,6 +9,27 @@
   text-align: center;
   margin-top: 40px;
 }
+
+.app {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.new_product {
+  background-color:mediumpurple;
+  margin: 10px;
+  border-radius: 10px;
+  width: 700px;
+  height: 130px;
+  justify-content: center;
+  margin: 0 auto;
+  
+}
+
 
 
 

@@ -1,0 +1,15 @@
+
+.new_product {
+    display: flex;
+    flex-direction: column;
+}
+
+.submit_button {
+    color: white;
+    background-color:indigo;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 10px;
+    
+}
