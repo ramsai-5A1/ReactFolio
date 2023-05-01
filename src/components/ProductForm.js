@@ -1,26 +1,34 @@
 import './ProductForm.css';
 import { useState } from 'react';
 
-function ProductForm() {
+function ProductForm(props) {
 
-    const [title, setTitle] = useState('');
-    const [date, setDate] = useState('');
+    const [newTitle, setTitle] = useState('');
+    const [newDate, setDate] = useState('');
 
     function titleChangeHandler(event) {
         setTitle(event.target.value);
-        console.log(event.target.value);
     }
 
     function dateChangeHandler(event) {
         setDate(event.target.value);
-        console.log(event.target.value);
-        console.log("Printing values: ");
-        console.log(title);
-        console.log(date);
+    }
+
+    function submitHandler(event) {
+        event.preventDefault();
+        const productData = {
+            title: newTitle,
+            date: newDate
+        };
+        //console.log(productData);
+        props.onSaveProduct(productData);
+
+        setTitle('');
+        setDate('');
     }
 
 
-    return (<form>
+    return (<form onSubmit={submitHandler}>
         <div className='new_product'>
             <div className='new_product_title'>
                 <label>Title</label>

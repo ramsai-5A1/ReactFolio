@@ -30,10 +30,15 @@ function App() {
     }
   ];
 
+  function printProductData(data) {
+    console.log("I am inside App.js");
+    console.log(data);
+  }
+
   return (
     <div className='app'>
         <div className='new_product'>
-          <NewProduct />  
+          <NewProduct pranay = {printProductData} />  
         </div>
         
         <div className='products'>
